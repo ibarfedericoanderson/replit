@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos sobre IA en Replit</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="logo.css">
+    
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="logo-container me-2" style="padding: 4px; border-radius: 5px;">
+                    <img src="Replit Logo.png" alt="Replit Logo" width="120" class="replit-logo">
+                </div>
+                <span class="ms-2">IA en Replit</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home me-1 text-warning text-warning"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="claude.html"><i class="fas fa-robot me-1 text-info text-info"></i> Claude Sonnet 3.5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="asistente.html"><i class="fas fa-code-branch me-1 text-success text-success"></i> Asistente de Replit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparacion.html"><i class="fas fa-balance-scale me-1 text-primary text-primary"></i> Comparación</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-qrcode me-1 text-danger text-danger"></i> QRGB
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="codigo.html"><i class="fas fa-code me-1 text-purple"></i> <span class="text-purple">Código Fuente</span></a></li>
+                            <li><a class="dropdown-item" href="version_web.html"><i class="fas fa-globe me-1 text-info text-info"></i> Versión Web</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://appqrgbpythonappapp-kz8zenrno2ybehz4zgkccc.streamlit.app/" target="_blank"><i class="fas fa-external-link-alt me-1 text-warning text-warning"></i> App Streamlit</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recursos.html"><i class="fas fa-book me-1 text-danger text-purple"></i> Recursos</a>
+                    </li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="screenshotToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header bg-success text-white">
+                <i class="fas fa-check-circle me-2 text-white"></i>
+                <strong class="me-auto">Captura de pantalla</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                ¡Captura de pantalla guardada con éxito!
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container py-4 flex-grow-1">
+        <div class="row mb-5">
+    <div class="col-lg-8 mx-auto text-center">
+        <h1 class="display-5 fw-bold mb-4">Recursos y referencias</h1>
+        <p class="lead">Documentación oficial, tutoriales y materiales adicionales sobre las herramientas de IA en Replit</p>
+    </div>
+</div>
+
+<div class="row mb-5">
+    <div class="col-md-6 mb-4">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+                <h2 class="card-title h4 mb-3">Documentación oficial</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-transparent">
+                        <i class="fas fa-file-alt me-2 text-primary"></i>
+                        <a href="https://docs.replit.com/ai" class="text-decoration-none" target="_blank">Guía oficial de IA en Replit</a>
+                        <p class="text-muted mb-0 small">Documentación completa sobre todas las características de IA disponibles en Replit.</p>
+                    </li>
+                    <li class="list-group-item bg-transparent">
+                        <i class="fas fa-file-alt me-2 text-primary"></i>
+                        <a href="https://docs.replit.com/programming-ide/workspace-features/replitai" class="text-decoration-none" target="_blank">Guía del Asistente de Replit</a>
+                        <p class="text-muted mb-0 small">Aprende a utilizar el Asistente integrado para acelerar tu programación.</p>
+                    </li>
+                    <li class="list-group-item bg-transparent">
+                        <i class="fas fa-file-alt me-2 text-primary"></i>
+                        <a href="https://docs.replit.com/programming-ide/workspace-features/ai-code-completion" class="text-decoration-none" target="_blank">Guía de completado de código con IA</a>
+                        <p class="text-muted mb-0 small">Descubre cómo aprovechar el completado de código inteligente.</p>
+                    </li>
+                    <li class="list-group-item bg-transparent">
+                        <i class="fas fa-file-alt me-2 text-primary"></i>
+                        <a href="https://blog.replit.com/ai" class="text-decoration-none" target="_blank">Blog de Replit sobre IA</a>
+                        <p class="text-muted mb-0 small">Artículos y anuncios sobre las funcionalidades de IA en Replit.</p>
+                    </li>
+                    <li class="list-group-item bg-transparent">
+                        <i class="fas fa-file-alt me-2 text-primary"></i>
+                        <a href="https://www.anthropic.com/claude" class="text-decoration-none" target="_blank">Documentación oficial de Claude</a>
+                        <p class="text-muted mb-0 small">Información detallada sobre el modelo Claude de Anthropic.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 mb-4">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+                <h2 class="card-title h4 mb-3">Tutoriales y guías</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-transparent">
+                        <i class="fab fa-youtube me-2 text-danger"></i>
+                        <a href="https://www.youtube.com/c/ReplitOfficial" class="text-decoration-none" target="_blank">Canal oficial de YouTube de Replit</a>
+                        <p class="text-muted mb-0 small">Tutoriales en video sobre cómo usar las herramientas de IA en Replit.</p>
+                    </li>
+                    <li class="list-group-item bg-transparent">
+                        <i class="fas fa-graduation-cap me-2 text-success text-success"></i>
+                        <a href="https://replit.com/learn" class="text-decoration-none" target="_blank">Replit Learn</a>
+                        <p class="text-muted mb-0 small">Cursos interactivos que incluyen el uso de herramientas de IA para programación.</p>
+                    </li>
+                    <li class="list-group-item bg-transparent">
+                        <i class="fas fa-book me-2 text-info"></i>
+                        <a href="https://blog.replit.com/ai-examples" class="text-decoration-none" target="_blank">Ejemplos de uso de IA en Replit</a>
+                        <p class="text-muted mb-0 small">Casos de estudio y ejemplos prácticos de cómo utilizar la IA para mejorar tu programación.</p>
+                    </li>
+                    <li class="list-group-item bg-transparent">
+                        <i class="fas fa-tasks me-2 text-warning"></i>
+                        <a href="https://replit.com/templates" class="text-decoration-none" target="_blank">Plantillas con IA</a>
+                        <p class="text-muted mb-0 small">Plantillas de proyectos que demuestran el uso efectivo de IA en diferentes contextos.</p>
+                    </li>
+                    <li class="list-group-item bg-transparent">
+                        <i class="fas fa-users me-2 text-info text-secondary"></i>
+                        <a href="https://replit.com/community" class="text-decoration-none" target="_blank">Comunidad de Replit</a>
+                        <p class="text-muted mb-0 small">Foros donde otros desarrolladores comparten consejos y mejores prácticas sobre el uso de IA.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card border-0 shadow-sm mb-5">
+    <div class="card-body p-4">
+        <h2 class="card-title h4 mb-4">Mejores prácticas</h2>
+        
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card bg-dark h-100 border-0">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-star me-2 text-warning"></i> Para Claude Sonnet 3.5</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-transparent">Sé específico en tus solicitudes para obtener respuestas más precisas</li>
+                            <li class="list-group-item bg-transparent">Proporciona contexto suficiente sobre tu proyecto y objetivo</li>
+                            <li class="list-group-item bg-transparent">Divide problemas complejos en consultas más pequeñas y manejables</li>
+                            <li class="list-group-item bg-transparent">Utiliza ejemplos concretos cuando expliques lo que necesitas</li>
+                            <li class="list-group-item bg-transparent">Refina iterativamente las respuestas con preguntas de seguimiento</li>
+                            <li class="list-group-item bg-transparent">Revisa siempre el código generado antes de implementarlo</li>
+                            <li class="list-group-item bg-transparent">Pide explicaciones cuando no entiendas algo de la respuesta</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card bg-dark h-100 border-0">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-star me-2 text-warning"></i> Para el Asistente de Replit</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-transparent">Personaliza las sugerencias de autocompletado según tus preferencias</li>
+                            <li class="list-group-item bg-transparent">Utiliza atajos de teclado para aceptar o rechazar sugerencias rápidamente</li>
+                            <li class="list-group-item bg-transparent">Aprovecha las sugerencias proactivas para mejorar tu código</li>
+                            <li class="list-group-item bg-transparent">Para consultas breves, usa el asistente en lugar de iniciar una conversación con Claude</li>
+                            <li class="list-group-item bg-transparent">Activa las notificaciones para recibir sugerencias de mejoras</li>
+                            <li class="list-group-item bg-transparent">Utiliza el asistente para verificar rápidamente la sintaxis</li>
+                            <li class="list-group-item bg-transparent">Aprovecha su capacidad para identificar errores potenciales en tu código</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-5">
+    <div class="col-lg-8 mx-auto">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body p-4">
+                <h2 class="card-title h4 mb-4 text-center">Prompts efectivos para programación</h2>
+                
+                <div class="accordion" id="accordionPrompts">
+                    <div class="accordion-item bg-transparent">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#promptOne" aria-expanded="true" aria-controls="promptOne">
+                                Para generación de código
+                            </button>
+                        </h2>
+                        <div id="promptOne" class="accordion-collapse collapse show" data-bs-parent="#accordionPrompts">
+                            <div class="accordion-body">
+                                <p class="mb-3">Estructura recomendada:</p>
+                                <ol>
+                                    <li>Especifica el lenguaje de programación</li>
+                                    <li>Describe la funcionalidad deseada con detalle</li>
+                                    <li>Menciona requisitos específicos (eficiencia, legibilidad, etc.)</li>
+                                    <li>Proporciona ejemplos de entradas y salidas esperadas</li>
+                                    <li>Especifica si necesitas comentarios explicativos</li>
+                                </ol>
+                                <div class="card bg-secondary bg-opacity-25 p-3 mt-3">
+                                    <p class="mb-1 fw-bold">Ejemplo:</p>
+                                    <p class="mb-0 font-monospace">
+                                        "Crea una función en Python que ordene un diccionario por valores en orden descendente. La función debe manejar valores numéricos y de texto. Para valores de texto, ordena alfabéticamente. Incluye manejo de errores para entradas no válidas y comentarios explicativos. Ejemplo de uso: ordenar_diccionario({'a': 5, 'b': 2, 'c': 8}) debería devolver {'c': 8, 'a': 5, 'b': 2}"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#promptTwo" aria-expanded="false" aria-controls="promptTwo">
+                                Para depuración de código
+                            </button>
+                        </h2>
+                        <div id="promptTwo" class="accordion-collapse collapse" data-bs-parent="#accordionPrompts">
+                            <div class="accordion-body">
+                                <p class="mb-3">Estructura recomendada:</p>
+                                <ol>
+                                    <li>Proporciona el código completo o la sección relevante</li>
+                                    <li>Describe el error o comportamiento inesperado</li>
+                                    <li>Incluye cualquier mensaje de error que estés recibiendo</li>
+                                    <li>Explica el comportamiento esperado</li>
+                                    <li>Menciona lo que ya has intentado para solucionarlo</li>
+                                </ol>
+                                <div class="card bg-secondary bg-opacity-25 p-3 mt-3">
+                                    <p class="mb-1 fw-bold">Ejemplo:</p>
+                                    <p class="mb-0 font-monospace">
+                                        "Tengo el siguiente código Python que debería leer un archivo CSV, filtrar las filas según ciertos criterios y escribir los resultados en un nuevo archivo. Sin embargo, estoy recibiendo un error 'KeyError: 'column_name'' en la línea X. El código es: [código]. Quiero que filtre las filas donde la columna 'age' tiene un valor mayor que 30. Ya he verificado que el archivo CSV existe y tiene los encabezados correctos."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#promptThree" aria-expanded="false" aria-controls="promptThree">
+                                Para optimización de código
+                            </button>
+                        </h2>
+                        <div id="promptThree" class="accordion-collapse collapse" data-bs-parent="#accordionPrompts">
+                            <div class="accordion-body">
+                                <p class="mb-3">Estructura recomendada:</p>
+                                <ol>
+                                    <li>Proporciona el código que deseas optimizar</li>
+                                    <li>Explica qué aspectos te gustaría mejorar (velocidad, memoria, legibilidad)</li>
+                                    <li>Menciona cualquier restricción o requisito que debas mantener</li>
+                                    <li>Incluye información sobre el tamaño típico de los datos</li>
+                                    <li>Indica el contexto de ejecución (entorno, limitaciones de hardware, etc.)</li>
+                                </ol>
+                                <div class="card bg-secondary bg-opacity-25 p-3 mt-3">
+                                    <p class="mb-1 fw-bold">Ejemplo:</p>
+                                    <p class="mb-0 font-monospace">
+                                        "Necesito optimizar esta función de procesamiento de imágenes en Python para mejorar el rendimiento. Actualmente tarda demasiado con imágenes grandes (4K). Me gustaría reducir el tiempo de procesamiento sin sacrificar significativamente la calidad. El código actual es: [código]. Este código se ejecutará en una Raspberry Pi 4 con 4GB de RAM, así que la eficiencia de memoria también es importante."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-5">
+    <div class="col-lg-8 mx-auto text-center">
+        <div class="alert alert-info">
+            <i class="fas fa-lightbulb me-2 fa-lg"></i>
+            <strong>Consejo:</strong> Recuerda que puedes utilizar Claude Sonnet 3.5 y el Asistente de Replit de forma complementaria. Claude es excelente para tareas complejas y explicaciones detalladas, mientras que el Asistente de Replit brilla en la asistencia en tiempo real durante la codificación.
+        </div>
+    </div>
+</div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="footer-heading">IA en Replit</h4>
+                    <p>Explora las herramientas de inteligencia artificial disponibles en Replit y aprende a integrarlas en tus proyectos de desarrollo.</p>
+                    <div class="d-flex mt-3">
+                        <a href="https://github.com/ibarfedericoanderson" class="me-3 footer-link" target="_blank">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                        <a href="https://replit.com" class="me-3 footer-link" target="_blank">
+                            <div class="logo-container" style="padding: 4px; border-radius: 5px;">
+                                <img src="Replit Logo.png" alt="Replit" width="80" class="replit-logo">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="footer-heading">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="footer-link"><i class="fas fa-home me-1 text-warning"></i> Inicio</a></li>
+                        <li class="mb-2"><a href="claude.html" class="footer-link"><i class="fas fa-robot me-1 text-info"></i> Claude Sonnet 3.5</a></li>
+                        <li class="mb-2"><a href="asistente.html" class="footer-link"><i class="fas fa-code-branch me-1 text-success"></i> Asistente de Replit</a></li>
+                        <li class="mb-2"><a href="comparacion.html" class="footer-link"><i class="fas fa-balance-scale me-1 text-primary"></i> Comparación</a></li>
+                        <li class="mb-2"><a href="codigo.html" class="footer-link"><i class="fas fa-qrcode me-1 text-danger"></i> Código QRGB</a></li>
+                        <li class="mb-2"><a href="recursos.html" class="footer-link"><i class="fas fa-book me-1 text-warning"></i> Recursos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="footer-heading">Recursos externos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="https://docs.replit.com/ai" class="footer-link" target="_blank">Documentación de IA en Replit</a></li>
+                        <li class="mb-2"><a href="https://blog.replit.com" class="footer-link" target="_blank">Blog de Replit</a></li>
+                        <li class="mb-2"><a href="https://www.anthropic.com/claude" class="footer-link" target="_blank">Página oficial de Claude</a></li>
+                        <li class="mb-2"><a href="https://github.com/ibarfedericoanderson/ScriptPythonAppQRGB" class="footer-link" target="_blank">Repositorio QRGB</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h5 class="footer-heading">Acerca del autor</h5>
+                    <p>Ibar Federico Anderson, Ph.D., Master, Diseñador Industrial</p>
+                    <div class="mt-3">
+                        <a href="https://scholar.google.com/citations?user=mXD4RFUAAAAJ&hl=en" class="btn btn-sm btn-outline-light me-2 mb-2" target="_blank">Google Scholar</a>
+                        <a href="https://orcid.org/0000-0002-9732-3660" class="btn btn-sm btn-outline-light me-2 mb-2" target="_blank">ORCID</a>
+                        <a href="https://github.com/ibarfedericoanderson" class="btn btn-sm btn-outline-light mb-2" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="mt-4 mb-3 border-secondary">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2023 Proyecto desarrollado con <a href="https://replit.com" class="footer-link" target="_blank">Replit</a></p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <p class="small text-muted mb-0">Potenciado por Claude Sonnet 3.5</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- html2canvas para captura de pantalla -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,252 @@
+/* Estilos personalizados adicionales */
+
+/* Hero section */
+.hero-section {
+  padding: 3rem 0;
+  background: linear-gradient(135deg, rgba(14, 21, 37, 0.8) 0%, rgba(14, 21, 37, 0.9) 100%);
+  background-size: cover;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+/* Efectos de animación para tarjetas */
+.card {
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.05), 
+    transparent
+  );
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.card:hover::before {
+  left: 100%;
+}
+
+/* Iconos de lenguajes */
+.language-icon-container {
+  transition: all 0.3s ease;
+}
+
+.language-icon-container:hover {
+  transform: scale(1.1);
+}
+
+/* Contenedores de código */
+.code-container {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.code-header {
+  background-color: #252830;
+  padding: 0.5rem 1rem;
+  font-family: monospace;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.code-title {
+  margin: 0;
+  color: #e1e1e1;
+}
+
+.code-body {
+  background-color: #1E1E1E;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+/* Modificadores para alertas */
+.alert {
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.alert-info {
+  border-left: 4px solid #3485e4 !important;
+}
+
+.alert-success {
+  border-left: 4px solid #1c9e75 !important;
+}
+
+.alert-warning {
+  border-left: 4px solid #f1c40f !important;
+}
+
+.alert-danger {
+  border-left: 4px solid #e84c3d !important;
+}
+
+/* Efectos para botones */
+.btn-primary {
+  background-color: #3485e4 !important;
+  border-color: #3485e4 !important;
+}
+
+.btn-success {
+  background-color: #1c9e75 !important;
+  border-color: #1c9e75 !important;
+}
+
+.btn-info {
+  background-color: #5DADE2 !important;
+  border-color: #5DADE2 !important;
+}
+
+.btn-warning {
+  background-color: #f1c40f !important;
+  border-color: #f1c40f !important;
+}
+
+.btn-danger {
+  background-color: #e84c3d !important;
+  border-color: #e84c3d !important;
+}
+
+/* Personalizaciones para la barra de navegación */
+.navbar-custom .nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-custom .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3485e4;
+  transition: width 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover::after,
+.navbar-custom .nav-link.active::after {
+  width: 100%;
+}
+
+.navbar-custom .dropdown-menu {
+  background-color: #1C1E26;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-custom .dropdown-item {
+  color: #e1e1e1;
+  transition: all 0.2s ease;
+}
+
+.navbar-custom .dropdown-item:hover {
+  background-color: #252830;
+  color: white;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #0a0d16 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer a {
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: #3485e4 !important;
+  transform: translateY(-2px);
+}
+
+/* Estilos de bloques de código sintaxis */
+.hljs {
+  background: #1E1E1E !important;
+  border-radius: 6px;
+}
+
+.hljs-keyword {
+  color: #569cd6;
+}
+
+.hljs-string {
+  color: #ce9178;
+}
+
+.hljs-comment {
+  color: #6a9955;
+}
+
+.hljs-function {
+  color: #dcdcaa;
+}
+
+.hljs-number {
+  color: #b5cea8;
+}
+
+/* Estilo para tablas de comparación */
+.table-comparison th,
+.table-comparison td {
+  vertical-align: middle;
+}
+
+.table-comparison tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Personalizaciones para tabs */
+.nav-tabs {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-tabs .nav-link {
+  color: #e1e1e1;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-tabs .nav-link.active {
+  color: white;
+  background-color: transparent;
+  border-color: #3485e4;
+}
+
+/* Ajustes específicos para móviles */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 0;
+  }
+  
+  .display-4, .display-5, .display-6 {
+    font-size: 1.8rem;
+  }
+  
+  .language-icon-container {
+    padding: 0.5rem !important;
+  }
+  
+  .language-icon-container i {
+    font-size: 1.5rem !important;
+  }
+}
